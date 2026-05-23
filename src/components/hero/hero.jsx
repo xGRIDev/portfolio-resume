@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-
+import profileImg from "../../assets/DDD00162.jpg";
 
 export function hero() {
   return (
@@ -12,7 +12,7 @@ export function hero() {
             Creative Developer & Designer
           </p>
 
-          <h1 className="text-5xl font-black leading-tight md:text-7xl">
+          <h1 className="text-5xl font-black leading-tight md:text-6xl">
             Hi, I’m <span className="text-purple-400">Zufar Naufal</span>
           </h1>
 
@@ -38,6 +38,15 @@ export function hero() {
             </button>
           </div>
         </div>
+         <div className="relative px-4 lg:px-8 py-5 -mt-60 flex justify-center lg:justify-end">
+            <div className="absolute h-80 w-80 rounded-full bg-purple-600/30 blur-3xl" />
+
+            <img
+              src={profileImg}
+              alt="Profile"
+              className="relative z-10 w-full max-w-[340px] rounded-[2rem] border border-gray-800 object-cover shadow-2xl"
+            />
+          </div>
       </section>
     </div>
   );
