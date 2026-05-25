@@ -1,5 +1,4 @@
 import React from 'react';
-import aos from 'aos';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { FaReact,FaLaravel } from 'react-icons/fa';
