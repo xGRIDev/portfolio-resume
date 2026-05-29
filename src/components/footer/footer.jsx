@@ -1,4 +1,4 @@
-export function footer(){
+export default function footer(){
     return (
         <div className="footer">
             <p className="text-center text-gray-400 py-4">

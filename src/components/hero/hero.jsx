@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import profileImg from "../../assets/DDD00162.jpg";
 
-export function hero() {
+export default function Hero() {
   return (
     <div className="hero">
      <section className="relative overflow-hidden px-6 py-24 md:px-16 lg:px-32 min-h-screen flex items-center">
@@ -15,12 +15,12 @@ export function hero() {
           </div>
           
           <div data-aos="fade-up" data-aos-duration={1400}>
-            <h1 className="text-5xl font-black leading-tight md:text-5xl">
-              Hi, I’m <span className="text-teal-600">Zufar Naufal</span>
+            <h1 className="text-5xl font-black leading-tight md:text-6xl">
+              👋, I’m <span className="text-teal-600">Zufar Naufal</span>
             </h1>
           </div>
           <div data-aos="fade-right">
-          <p className="mt-6 max-w-2xl text-lg text-gray-300 md:text-3xl">
+          <p className="mt-6 max-w-2xl text-lg text-gray-300 md:text-2xl">
           <TypeAnimation
             sequence={[
               "Focused & Insight Of Web-Development include (front-end / back-end) and RESTFul API",

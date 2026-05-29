@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
-export function Education()
-{
+export default function Education(){
     return (
         <section className="px-6 py-20 md:px-16 lg:px-32">
         <div className="mb-12 text-center">
@@ -26,7 +25,7 @@ export function Education()
 
               <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
                 <span className="rounded-full bg-purple-500/20 px-4 py-1 text-sm font-medium text-purple-300">
-                  2018 - 2026
+                  2018 - 2025
                 </span>
 
                 <h3 className="mt-5 text-2xl font-black text-white">

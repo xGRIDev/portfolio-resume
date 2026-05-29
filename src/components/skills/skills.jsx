@@ -49,7 +49,7 @@ function SkillBar({ skill }) {
     );
 }
 
-export function Skills() {
+export default function Skills() {
    
 
     const skills = [

@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import ss from '../../assets/3.png';
-
-export function Recents() {
+export default function Recents() {
 
   const [projectType, setProjectType] = useState('Current');
     const projects = [
@@ -35,12 +34,20 @@ export function Recents() {
         },
         {
           title: 'SICUKIL - Sistem Informasi Cukai Illegal',
-          description: 'This Project are based on Laravel and PostgreSQL, this project is a web-based application designed to spatially visualize data and mapping.',
+          description: 'This Project are based on Laravel and PostgreSQL, this project is a web-based application during my case of thesis designed to spatially visualize data and mapping.',
           tech: ['Laravel', 'PostgreSQL', 'JavaScript', 'Html', 'CSS'],
           image:
             ss,
           category: 'Current Project',
           type: 'Current',
+        },
+         {
+          title: 'Flight-Motel',
+          description: 'This Project Was Build by own project which ive learned to deep dive back-end using Golang and Gin FrameWork',
+          tech: ['Golang', 'Gin', 'SQL'],
+          image: 'https://images.unsplash.com/photo-1587573088697-b4fa10460683?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2tpbmd8ZW58MHx8MHx8fDA%3D',
+          category: 'Back - End',
+          type: 'Personal',
         },
       ];
 
@@ -65,7 +72,7 @@ export function Recents() {
               onClick={() => setProjectType('Current')}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition cursor-pointer ${
                 projectType === 'Current'
-                  ? 'bg-cyan-800 text-white-400'
+                  ? 'bg-teal-700 text-white-400'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -75,7 +82,7 @@ export function Recents() {
               onClick={() => setProjectType('Personal')}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition cursor-pointer ${
                 projectType === 'Personal'
-                  ? 'bg-cyan-800 text-white-400'
+                  ? 'bg-teal-700 text-white-400'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -132,10 +139,6 @@ export function Recents() {
                   <button className="rounded-2xl bg-purple-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-400 cursor-pointer">
                     View Project
                   </button>
-
-                  <div className="text-sm text-gray-500">
-                    2026
-                  </div>
                 </div>
               </div>
             </motion.div>

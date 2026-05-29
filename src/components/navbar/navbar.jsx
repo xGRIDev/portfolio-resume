@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { Menu, X, Home, User, Briefcase, Mail } from 'lucide-react';
+import { Menu, X, Home, User, Briefcase, Mail, Download } from 'lucide-react';
 import { useState } from 'react';
 
-export function Navbar() {
+export default function Navbar() {
     const [ open, setOpen] = useState(false);
 
     return (
@@ -46,8 +46,9 @@ export function Navbar() {
 
             {/* Resume Button */}
             <div className="hidden md:block">
-              <button className="rounded-full bg-gradient-to-r from-purple-500 to-cyan-400 px-6 py-3 text-sm font-semibold text-white transition hover:scale-105">
+              <button className="flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-800 px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 cursor-pointer">
                 Resume
+                <Download size={16}/> 
               </button>
             </div>
 
