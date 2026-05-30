@@ -1,9 +1,39 @@
 import { motion } from 'framer-motion';
-import { Menu, X, Home, User, Briefcase, Mail, Download } from 'lucide-react';
-import { useState } from 'react';
+import { Menu, X, Home, User, Briefcase, Download } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
     const [ open, setOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState("home");
+
+    useEffect(() => {
+      const sections = document.querySelectorAll("section");
+      const handleScroll = () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 120;
+          const sectionHeight = section.clientHeight;
+
+          if (
+            window.scrollY >= sectionTop &&
+            window.scrollX < sectionTop + sectionHeight
+          ) {
+            current = section.getAttribute("id");
+          }
+        });
+        
+        if (current) {
+          setActiveSection(current);
+        }
+      };
+      
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
 
     return (
         <div className="navbar">
@@ -17,30 +47,49 @@ export default function Navbar() {
             <div className="hidden items-center gap-3 rounded-full border border-white/10 bg-white/5 px-3 py-2 md:flex">
               <a
                 href="#home"
-                className="rounded-full px-5 py-2 text-sm font-medium text-gray-300 transition hover:bg-purple-500 hover:text-white"
+                className={`rounded-full px-5 py-2 text-sm font-medium transition
+                  ${
+                    activeSection === "home"
+                      ? "bg-purple-500 text-white"
+                      : "text-gray-300 hover:bg-purple-500 hover:text-white"
+                  }`}
               >
                 Home
               </a>
 
               <a
-                href="#about"
-                className="rounded-full px-5 py-2 text-sm font-medium text-gray-300 transition hover:bg-purple-500 hover:text-white"
+                href="#skills"
+                className={`rounded-full px-5 py-2 text-sm font-medium transition
+                  ${
+                    activeSection === "skills"
+                    ? "bg-purple-500 text-white"
+                    : "text-gray-300 hover:bg-purple-500 hover:text-white"
+                  }`}
               >
-                About
+                Skills
               </a>
 
               <a
                 href="#projects"
-                className="rounded-full px-5 py-2 text-sm font-medium text-gray-300 transition hover:bg-purple-500 hover:text-white"
+                className={`rounded-full px-5 py-2 text-sm font-medium transition
+                  ${
+                    activeSection === "projects"
+                      ? "bg-purple-500 text-white"
+                      : "text-gray-300 hover:bg-purple-500 hover:text-white"
+                  }`}
               >
                 Projects
               </a>
-
               <a
-                href="#contact"
-                className="rounded-full px-5 py-2 text-sm font-medium text-gray-300 transition hover:bg-purple-500 hover:text-white"
+                href="#educations"
+                className={`rounded-full px-5 py-2 text-sm font-medium transition 
+                  ${
+                    activeSection === "educations"
+                    ? "bg-purple-500 text-white"
+                    : "text-gray-300 hover:bg-purple-500 hover:text-white"
+                  }`}
               >
-                Contact
+                Education
               </a>
             </div>
 
@@ -81,10 +130,10 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#about"
+                href="#skills"
                 className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-purple-500 hover:text-white"
               >
-                <User size={18} /> About
+                <User size={18} /> Skills
               </a>
 
               <a
@@ -94,11 +143,11 @@ export default function Navbar() {
                 <Briefcase size={18} /> Projects
               </a>
 
-              <a
-                href="#contact"
+               <a
+                href="#educations"
                 className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-purple-500 hover:text-white"
               >
-                <Mail size={18} /> Contact
+                <Briefcase size={18} /> Educations
               </a>
             </div>
           </motion.div>
