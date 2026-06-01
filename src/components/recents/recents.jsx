@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import ss from '../../assets/3.png';
+import ss2 from '../../assets/2.png';
 export default function Recents() {
 
   const [projectType, setProjectType] = useState('Current');
@@ -18,8 +19,7 @@ export default function Recents() {
           title: 'SIPBG - Sistem Informasi Pembangunan & Gedung',
           description: 'When I was insternship at PT.RealMediaLabs, having participated in the development of SIPBG, a web-based application designed to spatially visualize data and mapping.',
           tech: ['Laravel', 'PostgreSQL', 'Html', 'CSS'],
-          image:
-            'https://gitlab.com/ZufarNaufal/kp/-/raw/master/screenshot/2.PNG',
+          image: ss2,
           category: 'Internship',
           type: 'Current',
         },
@@ -36,8 +36,7 @@ export default function Recents() {
           title: 'SICUKIL - Sistem Informasi Cukai Illegal',
           description: 'This Project are based on Laravel and PostgreSQL, this project is a web-based application during my case of thesis designed to spatially visualize data and mapping.',
           tech: ['Laravel', 'PostgreSQL', 'JavaScript', 'Html', 'CSS'],
-          image:
-            ss,
+          image: ss,
           category: 'Current Project',
           type: 'Current',
         },

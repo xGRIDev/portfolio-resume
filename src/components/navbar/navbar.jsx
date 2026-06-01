@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Menu, X, Home, User, Briefcase, Download } from 'lucide-react';
+import { Menu, X, User, Briefcase, Download } from 'lucide-react';
+import { SiReaddotcv } from "react-icons/si";
 import { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -41,52 +42,41 @@ export default function Navbar() {
         <nav className="rounded-full border border-white/10 bg-black/40 shadow-2xl backdrop-blur-2xl">
           <div className="flex items-center justify-between px-6 py-4 md:px-10">
             <h1 className="text-2xl font-black tracking-wide text-white">
-              xGRID.
+              <SiReaddotcv size={40}/>
             </h1>
 
             <div className="hidden items-center gap-3 rounded-full border border-white/10 bg-white/5 px-3 py-2 md:flex">
-              <a
-                href="#home"
-                className={`rounded-full px-5 py-2 text-sm font-medium transition
-                  ${
-                    activeSection === "home"
-                      ? "bg-purple-500 text-white"
-                      : "text-gray-300 hover:bg-purple-500 hover:text-white"
-                  }`}
-              >
-                Home
-              </a>
+                <a
+                  href="#projects"
+                  className={`rounded-full px-5 py-2 text-sm font-medium transition
+                    ${
+                      activeSection === "projects"
+                        ? "bg-sky-500 text-white"
+                        : "text-gray-300 hover:bg-emerald-500 hover:text-white"
+                    }`}
+                >
+                  Projects
+                </a>
 
               <a
                 href="#skills"
                 className={`rounded-full px-5 py-2 text-sm font-medium transition
                   ${
                     activeSection === "skills"
-                    ? "bg-purple-500 text-white"
-                    : "text-gray-300 hover:bg-purple-500 hover:text-white"
+                    ? "bg-sky-500 text-white"
+                    : "text-gray-300 hover:bg-emerald-500 hover:text-white"
                   }`}
               >
                 Skills
               </a>
 
               <a
-                href="#projects"
-                className={`rounded-full px-5 py-2 text-sm font-medium transition
-                  ${
-                    activeSection === "projects"
-                      ? "bg-purple-500 text-white"
-                      : "text-gray-300 hover:bg-purple-500 hover:text-white"
-                  }`}
-              >
-                Projects
-              </a>
-              <a
                 href="#educations"
                 className={`rounded-full px-5 py-2 text-sm font-medium transition 
                   ${
                     activeSection === "educations"
-                    ? "bg-purple-500 text-white"
-                    : "text-gray-300 hover:bg-purple-500 hover:text-white"
+                    ? "bg-sky-500 text-white"
+                    : "text-gray-300 hover:bg-emerald-500 hover:text-white"
                   }`}
               >
                 Education
@@ -123,29 +113,22 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-3 rounded-3xl border border-white/10 bg-black/80 p-4 backdrop-blur-xl">
               <a
-                href="#home"
-                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-purple-500 hover:text-white"
-              >
-                <Home size={18} /> Home
-              </a>
-
-              <a
                 href="#skills"
-                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-purple-500 hover:text-white"
+                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-emerald-500 hover:text-white"
               >
                 <User size={18} /> Skills
               </a>
 
               <a
                 href="#projects"
-                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-purple-500 hover:text-white"
+                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-emerald-500 hover:text-white"
               >
                 <Briefcase size={18} /> Projects
               </a>
 
                <a
                 href="#educations"
-                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-purple-500 hover:text-white"
+                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-emerald-500 hover:text-white"
               >
                 <Briefcase size={18} /> Educations
               </a>

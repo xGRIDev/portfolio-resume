@@ -3,7 +3,7 @@ import { DashLoading } from 'respinner';
 
 export default function Loading() {
   return (
-     <div className="flex min-h-screen items-center justify-center overflow-hidden bg-black">
+     <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-[#0f0f1b] to-black" />
          <div className="absolute left-[-10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-purple-600/20 blur-3xl animate-pulse" />
          <div className="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-cyan-500/20 blur-3xl animate-pulse" />

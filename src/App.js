@@ -6,6 +6,7 @@ import  Recents  from './components/recents/recents.jsx';
 import  footer  from './components/footer/footer.jsx';
 import  Education  from './components/education/education.jsx';
 import Careers from './components/education/careers.jsx';
+import ScrollToTop from './components/scroll-top/scrolltop.jsx'
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -45,22 +46,25 @@ function App() {
       <section className="px-6 py-20 md:px-16 lg:px-32" id="careers">
           <Careers />
       </section>
-      <section className="px-6 py-20 md:px-16 lg:px-32" id="skills">
-        <div className="skills-section">
-          <Skills />
-        </div>
-      </section>
       <section className="px-6 py-20 md:px-16 lg:px-32" id="projects">
         <div className="recents-section">
           <Recents />
         </div>
       </section>
-      <section className='education' id="educations">
+      <section className="px-6 py-20 md:px-16 lg:px-32" id="skills">
+        <div className="skills-section">
+          <Skills />
+        </div>
+      </section>
+      <section className="px-6 py-20 md:px-16 lg:px-32" id="educations">
+        <div className="education-section">
         <Education />
+        </div>
       </section>
       <div className="footer">
         {footer()}
       </div>
+      <ScrollToTop />
     </div>
   );
 }

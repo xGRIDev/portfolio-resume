@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Education(){
     return (
-        <section className="px-6 py-20 md:px-16 lg:px-32">
+        <div className="education-section">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
             Journey
@@ -72,6 +72,6 @@ export default function Education(){
             </motion.div>
           </div>
         </div>
-      </section>
+      </div>
     );
 }

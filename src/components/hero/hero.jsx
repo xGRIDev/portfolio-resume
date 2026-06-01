@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="relative z-10 max-w-5xl">
           <div data-aos="fade-right">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-gray-400">
-            Creative Developer & Designer
+            Junior - Inter  Programmer
           </p>
           </div>
           
@@ -23,8 +23,10 @@ export default function Hero() {
           <p className="mt-6 max-w-2xl text-lg text-gray-300 md:text-2xl">
           <TypeAnimation
             sequence={[
-              "Focused & Insight Of Web-Development include (front-end / back-end) and RESTFul API",
-              1000
+              "I'm a Fresh Grade Of Computer Science",
+              1000,
+              "Focused & Insight Of Web-Development include (front-end / back-end) and RESTFul API.",
+              800
             ]}
             wrapper="span"
             cursor={true}
