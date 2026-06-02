@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import profileImg from "../../assets/DDD00162.jpg";
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
 export default function Hero() {
   return (
@@ -36,13 +37,27 @@ export default function Hero() {
           </div>  
           <div className="mt-10 flex flex-wrap gap-4">
             <div data-aos="fade-right">
-            <button className="rounded-2xl bg-sky-500 px-6 py-3 font-semibold transition hover:scale-105 hover:bg-slate-600 cursor-pointer">
-              View Projects
+            <button className="rounded-2xl border border-gray-700 px-6 py-3 font-semibold transition duration-300 hover:-translate-y-3 hover:text-purple-400 cursor-pointer">
+               <a
+                  href="https://github.com/xGRIDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 transition duration-300 hover:-translate-y-3 hover:text-purple-400"
+                >
+                 <FiGithub size={24} />
+                  </a>
             </button>
             </div>
             <div data-aos="fade-left">
-              <button className="rounded-2xl border border-gray-700 px-6 py-3 font-semibold transition hover:border-purple-400 hover:text-purple-400 cursor-pointer">
-              Contact Me
+              <button className="rounded-2xl border border-gray-700 px-6 py-3 font-semibold transition duration-300 hover:-translate-y-3 hover:text-purple-400 cursor-pointer">
+               <a
+                  href="https://www.linkedin.com/in/zufarnaufal/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 transition duration-300 hover:-translate-y-3 hover:text-sky-400"
+                >
+                 <FiLinkedin size={24} />
+                  </a>
             </button>
             </div>
           </div>

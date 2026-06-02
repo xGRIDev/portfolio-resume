@@ -24,7 +24,12 @@ export default function Careers() {
                 </p>
 
                 <p className="mt-4 max-w-3xl leading-8 text-gray-400">
-                    
+                    Memasuki Pertengahan Tahun 2023, Saya berkesempatan & berkontribusi dunia pendidikan. Pada kesempatan ini, 
+                    saya berdedikasi selama kurun 2 tahun terutama edukasi terhadap mata pelajaran yang saya ajarkan teruntuk 
+                    Mata Pelajaran
+                    Pemrograman Dasar. Dari mata pelajaran dan kurikulum yang saya ajarkan basic dasar HTML, CSS, dan Javascript 
+                    daripada pondasi awal dari dunia pemrograman web disertai dengan tugas akhir pada tiap akhir semester 
+                    dengan membuat design interface berupa Landing-page, Card Button, dan Animasi dengan tech-stack terbaru saat itu.
                 </p>
                 </div>
                 </div>

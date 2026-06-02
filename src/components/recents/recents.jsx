@@ -14,6 +14,7 @@ export default function Recents() {
             'https://raw.githubusercontent.com/xGRIDev/PUBGM-C9S27-LEADERBORD/master/media/lb-ss.jpg',
           category: 'Backend - Study Case',
           type: 'Personal',
+          view: 'https://github.com/xGRIDev/PUBGM-C9S27-LEADERBORD',
         },
         {
           title: 'SIPBG - Sistem Informasi Pembangunan & Gedung',
@@ -22,6 +23,7 @@ export default function Recents() {
           image: ss2,
           category: 'Internship',
           type: 'Current',
+          view: 'https://gitlab.com/ZufarNaufal/kp',
         },
         {
           title: 'Nwave-Weather',
@@ -31,6 +33,7 @@ export default function Recents() {
             'https://images.unsplash.com/photo-1705077296278-d82dd5c8662f?q=80&w=809&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           category: 'Backend - Study Case',
           type: 'Personal',
+          view: 'https://github.com/xGRIDev/Nwave-weather',
         },
         {
           title: 'SICUKIL - Sistem Informasi Cukai Illegal',
@@ -39,6 +42,7 @@ export default function Recents() {
           image: ss,
           category: 'Current Project',
           type: 'Current',
+          view: 'https://github.com/xGRIDev/skripsi-sicukil',
         },
          {
           title: 'Flight-Motel',
@@ -47,6 +51,7 @@ export default function Recents() {
           image: 'https://images.unsplash.com/photo-1587573088697-b4fa10460683?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2tpbmd8ZW58MHx8MHx8fDA%3D',
           category: 'Back - End',
           type: 'Personal',
+          view: 'https://github.com/xGRIDev/go-exercise-flight-motel',
         },
       ];
 
@@ -136,7 +141,13 @@ export default function Recents() {
 
                 <div className="mt-8 flex items-center justify-between">
                   <button className="rounded-2xl bg-purple-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-400 cursor-pointer">
-                    View Project
+                    {project.view ? (
+                      <a href={project.view} target="_blank" rel="noopener noreferrer">
+                        View Project
+                      </a>
+                    ) : (
+                      "View Project"
+                    )}
                   </button>
                 </div>
               </div>
