@@ -26,15 +26,17 @@ function App() {
       once: false,
     });
 
-    const timer = setTimeout(() => {
-    setLoading(false);
-  }, 2500);
 
-  return () => clearTimeout(timer);
   } , []);
 
   if (loading) {
-  return <Loading />;
+  return <>
+      {loading && (
+        <Loading finishLoading={() => setLoading(false)} />
+      )}
+
+      {!loading && <Home />}
+    </>;
 }
 
 function Home(){
