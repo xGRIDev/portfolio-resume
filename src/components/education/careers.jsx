@@ -6,7 +6,7 @@ export default function Careers() {
             <div className="relative border-l border-cyan-400/40 ml-4">
                 
                 {/* Item 1 */}
-                <div data-aos="fade-left">
+                <div data-aos="fade-left" data-aos-duration={1000}>
 
                 <div className="relative mb-14 pl-10">
                 <div className="absolute -left-[9px] top-2 h-4 w-4 rounded-full bg-cyan-400" />
@@ -35,7 +35,7 @@ export default function Careers() {
                 </div>
 
                 {/* Item 2 */}
-                <div data-aos="fade-left">
+                <div data-aos="fade-left" data-aos-duration={800}>
 
                 <div className="relative mb-14 pl-10">
                 <div className="absolute -left-[9px] top-2 h-4 w-4 rounded-full bg-gray-700" />
@@ -60,7 +60,7 @@ export default function Careers() {
                 </div>
 
                 {/* Item 3 */}
-                <div data-aos="fade-left">
+                <div data-aos="fade-left" data-aos-duration={600}>
                     
                 <div className="relative pl-10">
                 <div className="absolute -left-[9px] top-2 h-4 w-4 rounded-full bg-gray-700" />

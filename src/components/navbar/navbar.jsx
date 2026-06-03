@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Menu, X, User, Briefcase, Download } from 'lucide-react';
 import { SiReaddotcv } from "react-icons/si";
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [ open, setOpen] = useState(false);
@@ -85,10 +86,12 @@ export default function Navbar() {
 
             {/* Resume Button */}
             <div className="hidden md:block">
-              <button className="flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-800 px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 cursor-pointer">
-                Resume
-                <Download size={16}/> 
-              </button>
+             <Link
+              to="/resume"
+              className="flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-800 px-6 py-3"
+            >
+              Resume
+            </Link>
             </div>
 
             {/* Mobile Menu Button */}
