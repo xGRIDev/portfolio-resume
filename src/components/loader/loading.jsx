@@ -11,10 +11,11 @@ export default function Loading({ finishLoading }) {
     });
 
     tl.from(".loader-text", {
-      y: 50,
+      y: 100,
       opacity: 0,
-      duration: 1,
-      ease: "power4.out",
+      scale: 0.8,
+      duration: 1.5,
+      ease: "expo.out",
     })
     .to(".loader-bar", {
       width: "100%",
@@ -33,8 +34,8 @@ export default function Loading({ finishLoading }) {
         ref={loaderRef}
         className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black"
      >
-      <h1 className="loader-text text-5xl font-black text-white">
-        x G R I D
+      <h1 className="loader-text text-4xl font-black tracking-[0.3em]">
+        xG R I D
       </h1>
     <div className="mt-8 h-[2px] w-64 bg-zinc-800 overflow-hidden">
       <div className="loader-bar h-full w-0 bg-emerald-500"/>

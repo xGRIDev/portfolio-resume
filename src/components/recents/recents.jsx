@@ -71,12 +71,12 @@ export default function Recents() {
             </p>
             <h2 className="mt-2 text-4xl font-black">Contributed</h2>
           </div>
-          <div className="flex w-fit items-center rounded-full border border-white/10 bg-white/5 p-1 backdrop-blur-xl">
+          <div className="flex flex-col items-center px-10 md:flex-row mt-6">
             <button
               onClick={() => setProjectType('Current')}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition cursor-pointer ${
                 projectType === 'Current'
-                  ? 'bg-teal-700 text-white-400'
+                  ? 'bg-emerald-700 text-white-400'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -86,7 +86,7 @@ export default function Recents() {
               onClick={() => setProjectType('Personal')}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition cursor-pointer ${
                 projectType === 'Personal'
-                  ? 'bg-teal-700 text-white-400'
+                  ? 'bg-emerald-700 text-white-400'
                   : 'text-gray-400 hover:text-white'
               }`}
             >

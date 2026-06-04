@@ -3,6 +3,8 @@ import { Menu, X, User, Briefcase, Download } from 'lucide-react';
 import { SiReaddotcv } from "react-icons/si";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { PiGraduationCap, PiReadCvLogoLight  } from "react-icons/pi";
+
 
 export default function Navbar() {
     const [ open, setOpen] = useState(false);
@@ -133,7 +135,13 @@ export default function Navbar() {
                 href="#educations"
                 className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-emerald-500 hover:text-white"
               >
-                <Briefcase size={18} /> Educations
+                <PiGraduationCap size={18} /> Educations
+              </a>
+              <a
+                href="/resume"
+                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-emerald-500 hover:text-white"
+              >
+                <PiReadCvLogoLight  size={18} /> Resume
               </a>
             </div>
           </motion.div>
