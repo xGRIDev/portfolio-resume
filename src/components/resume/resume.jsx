@@ -2,6 +2,8 @@ import { gsap } from 'gsap';
 import { useEffect } from 'react';
 import  { MdArrowBackIosNew } from 'react-icons/md';
 import profileImg from '../../assets/xgrd.jpeg';
+import { IoCodeDownloadOutline } from "react-icons/io5";
+
 
 export default function Resume() {
 
@@ -92,7 +94,7 @@ export default function Resume() {
             />
 
             <a
-              href="/CV-ATS-ZUFARNAUFAL-NEW.pdf"
+              href="/docs/CV-ATS-ZUFARNAUFAL-NEW.pdf"
               download
               className="
               flex
@@ -104,13 +106,14 @@ export default function Resume() {
               rounded-full
               bg-gradient-to-r
               from-emerald-500
-              to-cyan-500
+              to-gray-800
               font-semibold
               hover:scale-105
               transition-all
               "
             >
               My Resume
+              <IoCodeDownloadOutline size={30} />
             </a>
           </div>
         </div>

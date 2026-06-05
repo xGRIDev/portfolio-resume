@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { Menu, X, User, Briefcase, Download } from 'lucide-react';
+import { Menu, X, User, Briefcase } from 'lucide-react';
 import { SiReaddotcv } from "react-icons/si";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { PiGraduationCap, PiReadCvLogoLight  } from "react-icons/pi";
+import { PiGraduationCap, PiReadCvLogoLight, PiCertificateLight   } from "react-icons/pi";
 
 
 export default function Navbar() {
@@ -84,6 +84,18 @@ export default function Navbar() {
               >
                 Education
               </a>
+
+              <a
+                href="#certificates"
+                className={`rounded-full px-5 py-2 text-sm font-medium transition 
+                  ${
+                    activeSection === "certificates"
+                    ? "bg-sky-500 text-white"
+                    : "text-gray-300 hover:bg-emerald-500 hover:text-white"
+                  }`}
+              >
+                My Certificates
+              </a>
             </div>
 
             {/* Resume Button */}
@@ -136,6 +148,12 @@ export default function Navbar() {
                 className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-emerald-500 hover:text-white"
               >
                 <PiGraduationCap size={18} /> Educations
+              </a>
+               <a
+                href="#certificates"
+                className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-emerald-500 hover:text-white"
+              >
+                <PiCertificateLight   size={18} /> My Certificate
               </a>
               <a
                 href="/resume"
