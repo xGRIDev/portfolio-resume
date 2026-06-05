@@ -8,7 +8,7 @@ import  Education  from './components/education/education.jsx';
 import Careers from './components/education/careers.jsx';
 import ScrollToTop from './components/scroll-top/scrolltop.jsx';
 import CodeContribute from './components/githubcontribute/codecontribute.jsx';
-import CertificateCard from './components/certificates/certificate.jsx';
+import Certificates from './components/certificates/certificate.jsx';
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -70,9 +70,11 @@ function Home(){
         <Education />
         </div>
       </section>
-      <div className='certificates' id="certificates">
-        <CertificateCard />
-      </div>
+      <section className='px-6 py-10' id="certificates">
+        <div className="certification-section">
+        <Certificates />
+        </div>
+      </section>
       <div className="footer">
         {footer()}
       </div>

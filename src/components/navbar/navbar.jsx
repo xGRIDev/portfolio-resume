@@ -153,7 +153,7 @@ export default function Navbar() {
                 href="#certificates"
                 className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-gray-300 transition hover:bg-emerald-500 hover:text-white"
               >
-                <PiCertificateLight   size={18} /> My Certificate
+                <PiCertificateLight size={18} /> My Certificate
               </a>
               <a
                 href="/resume"
