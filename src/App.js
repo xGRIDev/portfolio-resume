@@ -43,34 +43,34 @@ function App() {
 function Home(){
   return (
     <>
-      <div className="navbar">
+      <div className="overflow-x-hidden">
         <Navbar />
       </div>
       <section>
-        <div className="hero-section">
+        <div className="overflow-x-hidden">
           <Hero />
         </div>
       </section>
-      <section className="px-6 py-20 md:px-16 lg:px-32" id="careers">
+      <section className="overflow-x-hidden px-6 py-20 md:px-16 lg:px-32" id="careers">
           <Careers />
       </section>
-      <section className="px-6 py-20 md:px-16 lg:px-32" id="projects">
+      <section className="overflow-x-hidden px-6 py-20 md:px-16 lg:px-32" id="projects">
         <div className="recents-section">
           <Recents />
         </div>
       </section>
-      <section className="px-6 py-20 md:px-16 lg:px-32" id="skills">
+      <section className="overflow-x-hidden px-6 py-20 md:px-16 lg:px-32" id="skills">
         <div className="skills-section">
           <Skills />
         </div>
       </section>
         <CodeContribute/>
-      <section className="px-6 py-20 md:px-16 lg:px-32" id="educations">
+      <section className="overflow-x-hidden px-6 py-20 md:px-16 lg:px-32" id="educations">
         <div className="education-section">
         <Education />
         </div>
       </section>
-      <section className='px-6 py-10' id="certificates">
+      <section className='overflow-x-hidden px-6 py-10' id="certificates">
         <div className="certification-section">
         <Certificates />
         </div>
