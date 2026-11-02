@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import ss from '../../assets/3.png';
 import ss2 from '../../assets/2.png';
-import xgrdstore from '../../assets/store.jpg';
+import ss3 from '../../assets/store.jpg';
 
 export default function Recents() {
 
@@ -59,7 +59,7 @@ export default function Recents() {
           title: 'xGRID-Store',
           description: 'This Front-End Project was build by own case which like platform Gaming Top-Up',
           tech: ['React', 'Tailwind CSS', 'Javascript', 'GSAP'],
-          image: xgrdstore,
+          image: ss3,
           category: 'Front - End',
           type: 'Personal',
           view: 'https://github.com/xGRIDev/xGRID-STORE',
