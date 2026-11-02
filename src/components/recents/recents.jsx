@@ -3,7 +3,6 @@ import { useState } from 'react';
 import ss from '../../assets/3.png';
 import ss2 from '../../assets/2.png';
 import xgrdstore from '../../assets/xgrid-store.jpg';
-
 export default function Recents() {
 
   const [projectType, setProjectType] = useState('Current');
