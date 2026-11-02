@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import ss from '../../assets/3.png';
 import ss2 from '../../assets/2.png';
-import xgrdstore from '../../assets/xgrid-store.jpg';
+import xgrdstore from '../../assets/store.jpg';
 
 export default function Recents() {
 
